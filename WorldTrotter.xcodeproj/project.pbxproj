@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		40469BEB2524CB9000B22F28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469BEA2524CB9000B22F28 /* AppDelegate.swift */; };
 		40469BED2524CB9000B22F28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469BEC2524CB9000B22F28 /* SceneDelegate.swift */; };
-		40469BEF2524CB9000B22F28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469BEE2524CB9000B22F28 /* ViewController.swift */; };
+		40469BEF2524CB9000B22F28 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469BEE2524CB9000B22F28 /* ConversionViewController.swift */; };
 		40469BF22524CB9000B22F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40469BF02524CB9000B22F28 /* Main.storyboard */; };
 		40469BF42524CB9200B22F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40469BF32524CB9200B22F28 /* Assets.xcassets */; };
 		40469BF72524CB9200B22F28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40469BF52524CB9200B22F28 /* LaunchScreen.storyboard */; };
 		40469C022524CB9200B22F28 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469C012524CB9200B22F28 /* WorldTrotterTests.swift */; };
 		40469C0D2524CB9200B22F28 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469C0C2524CB9200B22F28 /* WorldTrotterUITests.swift */; };
+		40469C1E2531B2FC00B22F28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469C1D2531B2FB00B22F28 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		40469BE72524CB9000B22F28 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40469BEA2524CB9000B22F28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40469BEC2524CB9000B22F28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		40469BEE2524CB9000B22F28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40469BEE2524CB9000B22F28 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		40469BF12524CB9000B22F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40469BF32524CB9200B22F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40469BF62524CB9200B22F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		40469C082524CB9200B22F28 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40469C0C2524CB9200B22F28 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		40469C0E2524CB9300B22F28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40469C1D2531B2FB00B22F28 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = WorldTrotter/MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		40469BDE2524CB9000B22F28 = {
 			isa = PBXGroup;
 			children = (
+				40469C1D2531B2FB00B22F28 /* MapViewController.swift */,
 				40469BE92524CB9000B22F28 /* WorldTrotter */,
 				40469C002524CB9200B22F28 /* WorldTrotterTests */,
 				40469C0B2524CB9200B22F28 /* WorldTrotterUITests */,
@@ -101,7 +104,7 @@
 			children = (
 				40469BEA2524CB9000B22F28 /* AppDelegate.swift */,
 				40469BEC2524CB9000B22F28 /* SceneDelegate.swift */,
-				40469BEE2524CB9000B22F28 /* ViewController.swift */,
+				40469BEE2524CB9000B22F28 /* ConversionViewController.swift */,
 				40469BF02524CB9000B22F28 /* Main.storyboard */,
 				40469BF32524CB9200B22F28 /* Assets.xcassets */,
 				40469BF52524CB9200B22F28 /* LaunchScreen.storyboard */,
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40469BEF2524CB9000B22F28 /* ViewController.swift in Sources */,
+				40469BEF2524CB9000B22F28 /* ConversionViewController.swift in Sources */,
 				40469BEB2524CB9000B22F28 /* AppDelegate.swift in Sources */,
 				40469BED2524CB9000B22F28 /* SceneDelegate.swift in Sources */,
+				40469C1E2531B2FC00B22F28 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
